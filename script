@@ -87,7 +87,7 @@ for line in valid_lines:
         pass
 
 if not access_granted:
-    print(f"{Fore.RED}❌ 𝐀ᴄᴄᴇss 𝐃ᴇɴɪᴇᴅ. 𝐂ᴏɴᴛᴀᴄᴛ @ 𝐅ᴏʀ 𝐏ᴀɪᴅ 𝐁ɪᴢᴢ 𝐓ᴏᴏʟ 𝐏ʀᴇᴍɪᴜᴍ 𝐀ᴄᴄᴇss..")
+    print(f"{Fore.RED}❌ 𝐀ᴄᴄᴇss 𝐃ᴇɴɪᴇᴅ. 𝐂ᴏɴᴛᴀᴄᴛ @M0bsy_olds 𝐅ᴏʀ 𝐏ᴀɪᴅ 𝐁ɪᴢᴢ 𝐓ᴏᴏʟ 𝐏ʀᴇᴍɪᴜᴍ 𝐀ᴄᴄᴇss..")
     sleep(2)
     os._exit(0)
 
