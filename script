@@ -218,31 +218,25 @@ def InfoAcc(username,gg):
 	elif reset_email.endswith('@a**.com')or reset_email.endswith('@aol.com'):email=f"{username}@aol.com"
 	else:email=f"{username}"
 	ss=f"""
-╔═══[ 𝐌𝟎𝐁𝐒𝐘 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 // 𝐆𝐑𝐀𝐍𝐓𝐄𝐃 ]═══╗
-║                                           ║
-║  🏷  𝗧𝗔𝗥𝗚𝗘𝗧       │ {full_name}            ║
-║  🏷  𝗛𝗔𝗡𝗗𝗟𝗘       │ @{username}            ║
-║  🏷  𝗖𝗢𝗡𝗧𝗔𝗖𝗧      │ {email}                 ║
-║  🏷  𝗥𝗘𝗦𝗘𝗧 𝗖𝗢𝗗𝗘   │ {reset_email}           ║
-║                                           ║
-║  ══ 𝗦𝗢𝗖𝗜𝗔𝗟 𝗦𝗖𝗔𝗡 ═══════════════════════   ║
-║  📊  𝗙𝗢𝗟𝗟𝗢𝗪𝗘𝗥𝗦    │ {fows}                  ║
-║  🔗  𝗙𝗢𝗟𝗟𝗢𝗪𝗜𝗡𝗚    │ {fowg}                  ║
-║  🖼  𝗣𝗢𝗦𝗧𝗦        │ {pp}                    ║
-║                                           ║
-║  ══ 𝗣𝗥𝗢𝗙𝗜𝗟𝗘 𝗗𝗔𝗧𝗔 ══════════════════════   ║
-║  📜  𝗕𝗜𝗢          │ {bio}                   ║
-║  🔒  𝗣𝗥𝗜𝗩𝗔𝗧𝗘      │ {isPraise}               ║
-║  📅  𝗬𝗘𝗔𝗥 𝗝𝗢𝗜𝗡𝗘𝗗  │ {date(Id)}               ║
-║  💠  𝗠𝗘𝗧𝗔 𝗧𝗔𝗚𝗦    │ {meta}                   ║
-║                                           ║
-║  🌐  𝗟𝗜𝗡𝗞         │https://www.instagram.com/{username}
-║
-║                                           ║
-║  ⌁  𝗟𝗢𝗚𝗚𝗘𝗗 𝗕𝗬     │ @M0bsy_olds              ║
-║  ⌁  𝗖𝗛𝗔𝗡𝗡𝗘𝗟       │ @about_m0bsy             ║
-║                                           ║
-╚════════════════[ 𝐄𝐍𝐃 𝐎𝐅 𝐓𝐑𝐀𝐍𝐒𝐌𝐈𝐒𝐒𝐈𝐎𝐍 ]════╝
+╔═════ ⌬ M0BSY USER SCAN — ACTIVE ⌬ ═════╗
+   ꧁⎝ 𓆩༺✦༻𓆪 ⎠꧂
+   
+   [👤]  NAME        ➤ {full_name}  
+   [📛]  USERNAME    ➤ @{username}  
+   [📧]  EMAIL       ➤ {email}  
+   [📊]  FOLLOWERS   ➤ {fows}  
+   [🔗]  FOLLOWING   ➤ {fowg}  
+   [🖼️]  POSTS       ➤ {pp}  
+   [📜]  BIO         ➤ {bio}  
+   [🔒]  PRIVATE     ➤ {isPraise}  
+   [🆔]  ID          ➤ {Id}  
+   [📅]  YEAR        ➤ {date(Id)}  
+   [💠]  META        ➤ {meta}  
+   [🌐]  PROFILE     ➤ instagram.com/{username}  
+   [♻️]  RESET KEY   ➤ {reset_email}  
+
+   ꧁⎝ 𓆩༺✦༻𓆪 ⎠꧂
+╚═════ ⌬ TOOL BY @M0bsy_olds | @about_m0bsy ⌬ ═════╝
 """;inline_keyboard=[[{'text':'Developer','url':'https://t.me/M0bsy_olds'},{'text':'Join Channel','url':'https://t.me/about_m0bsy'}]];payload={'chat_id':user_id,'text':ss,'reply_markup':json.dumps({'inline_keyboard':inline_keyboard})}
 	try:requests.post(f"https://api.telegram.org/bot{Token}/sendMessage",data=payload)
 	except:pass
