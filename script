@@ -58,7 +58,7 @@ ID = input(f"{Fore.YELLOW}𝐄ɴᴛᴇʀ 𝐘ᴏᴜʀ 𝐀ᴄᴄᴇss 𝐈ᴅ: {
 progress_bar("𝐅ᴇᴛᴄʜɪɴɢ 𝐀ᴄᴄᴇss 𝐋ɪsᴛ", length=25, speed=0.03)
 
 try:
-    response = requests.get("https://raw.githubusercontent.com/M0bsyy/M0bsy-Bizz/main/Paid.User's")
+    response = requests.get("https://raw.githubusercontent.com/M0bsyy/M0bsy-Bizz/main/Paid.users")
     response.raise_for_status()
     valid_lines = response.text.splitlines()
 except requests.RequestException:
