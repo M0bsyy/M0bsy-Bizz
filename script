@@ -17,7 +17,6 @@ import pytz
 from cfonts import render
 from user_agent import generate_user_agent as ggb
 from requests import post as pp,get
-import Topython
 import sys
 COLOR_COMBOS=[['green','yellow'],['magenta','red'],['blue','cyan'],['white','gray'],['red','magenta'],['yellow','green']]
 stein_colors,qe_colors=random.sample(COLOR_COMBOS,2)
